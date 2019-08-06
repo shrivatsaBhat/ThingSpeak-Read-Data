@@ -1,14 +1,14 @@
 #include "ThingSpeak.h"
 #include <ESP8266WiFi.h>
 
-char ssid[] = "Android";   // your network SSID (name) 
-char pass[] = "shri@1998";   // your network password
+char ssid[] = "SSID";   // your network SSID (name) 
+char pass[] = "PASSWORD";   // your network password
 
 WiFiClient  client;
 
-unsigned long TSChannelID = 832256;//SECRET_CH_ID;
-const char * TSReadAPIKey = "TSK7GHPHIYD5B1UH";//SECRET_READ_APIKEY;
-unsigned int TSFieldNumber = 1; 
+unsigned long TSChannelID = 123456;//SECRET_CH_ID;
+const char * TSReadAPIKey = "ABCDEFGHIJ12345";//SECRET_READ_APIKEY;
+unsigned int TSFieldNumber = 1; // Field number
 
 void setup() {
   Serial.begin(115200);  // Initialize serial
